@@ -164,7 +164,7 @@ function App() {
                   Cloud Practitioner Certificate, as I am very excited about
                   understanding and implementing various cloud solutions due to
                   their cost effectiveness and increasing ease of deployment and
-                  maintainance.Very soon I will also be aquiring my AWS
+                  maintainance. Very soon I will also be aquiring my AWS
                   Solutions Architect - Associate Certificate so stay tuned!
                 </p>
               </div>
