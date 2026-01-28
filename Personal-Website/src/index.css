@@ -1,0 +1,75 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+/* Tailwind import/directives above this */
+
+.blob {
+  position: absolute;
+  width: 20vmax;
+  height: 20vmax;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.65;
+  mix-blend-mode: screen; /* makes overlaps glow-y; try 'overlay' too */
+  will-change: transform;
+}
+
+.blob-1 {
+  left: -20vmax;
+  top: 10vmax;
+  background: #312e81; /* indigo */
+  animation: float1 18s ease-in-out infinite;
+}
+
+.blob-2 {
+  right: -25vmax;
+  top: 0vmax;
+  background: #7c3aed; /* violet */
+  animation: float2 22s ease-in-out infinite;
+}
+
+.blob-3 {
+  left: 10vmax;
+  bottom: -30vmax;
+  background: #9333ea; /* purple */
+  animation: float3 26s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(18vmax, 10vmax) scale(1.15);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-16vmax, 12vmax) scale(0.9);
+  }
+}
+
+@keyframes float3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(12vmax, -14vmax) scale(1.2);
+  }
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .blob-1,
+  .blob-2,
+  .blob-3 {
+    animation: none;
+  }
+}
