@@ -13,6 +13,7 @@ import {
   SiNodedotjs,
   SiExpress,
   SiPostgresql,
+  SiFlask,
 } from "react-icons/si";
 
 function App() {
@@ -153,9 +154,7 @@ function App() {
                   testing APIs for core functionality and integration of 3rd
                   party services. In my time at the internship I learned a lot
                   about software development using the agile-scrum methodology
-                  and working in a cross-functional team. Very soon I will also
-                  be aquiring my AWS Solutions Architect - Associate Certificate
-                  so stay tuned!
+                  and working in a cross-functional team.
                 </p>
                 <p>
                   Some of my recent work includes developing{" "}
@@ -165,7 +164,8 @@ function App() {
                   Cloud Practitioner Certificate, as I am very excited about
                   understanding and implementing various cloud solutions due to
                   their cost effectiveness and increasing ease of deployment and
-                  maintainance.
+                  maintainance.Very soon I will also be aquiring my AWS
+                  Solutions Architect - Associate Certificate so stay tuned!
                 </p>
               </div>
 
@@ -330,6 +330,12 @@ function App() {
                       <SiPostgresql className="h-8 w-8 text-white/85" />
                       <span className="font-raleway text-xl font-semibold">
                         PostgreSQL
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-4 text-white/85">
+                      <SiFlask className="h-8 w-8 text-white/85" />
+                      <span className="font-raleway text-xl font-semibold">
+                        Flask
                       </span>
                     </li>
                   </ul>
